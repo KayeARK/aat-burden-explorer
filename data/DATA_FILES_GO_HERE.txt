@@ -1,1 +1,0 @@
-Run source("AAT_Burden_Explorer_Web/prepare_data.R") from your project root to stage the required audit CSV files before publishing.
