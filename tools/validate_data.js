@@ -1,0 +1,10 @@
+/* Run locally after preparing real data: node tools/validate_data.js */
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),M=require('../model.js');
+const dir=process.argv[2]||path.join(__dirname,'../data');
+const get=(f,optional=false)=>{const p=path.join(dir,f);return optional&&!fs.existsSync(p)?null:fs.readFileSync(p,'utf8');};
+const d=M.load(get('Prediction_cells_tsetse_distance_cattle_and_burden.csv'),get('Uncertainty_only_primary_masks_25km.csv'),get('Uncertainty_only_mask_thresholds.csv',true));
+const base={regional:false,stage:6,stages:[6,2,6],apply:false,metric:'logit',threshold:2};const ref=M.aggregate(d.cells,base);const full=M.aggregate(d.cells,{...base,stage:9});const near=(a,b,tol=1e-9)=>Math.abs(a-b)<=tol*Math.max(1,Math.abs(a),Math.abs(b));
+assert(near(full.retainedCattle,full.allCattle),'Unrestricted cattle mismatch');assert(near(full.retainedBurden,full.unrestricted,1e-5),'Unrestricted burden mismatch beyond audit tolerance');
+let cases=0;for(const metric of ['prob','logit'])for(const apply of [false,true])for(const threshold of metric==='prob'?[1,20,100]:[.1,2,12]){let prev=null;for(let stage=0;stage<10;stage++){const s=M.aggregate(d.cells,{...base,metric,apply,threshold,stage});assert(near(s.retainedBurden+s.geographicExclusion+s.uncertaintyExclusion,s.unrestricted),'Burden decomposition failed');if(prev){assert(s.retainedCattle>=prev.retainedCattle-0.001*Math.max(1,s.allCattle),'Cattle decreased with wider buffer beyond audit tolerance');assert(s.retainedBurden>=prev.retainedBurden-0.001*Math.max(1,s.unrestricted),'Burden decreased with wider buffer beyond audit tolerance');}prev=s;cases++;}}
+const regional=M.aggregate(d.cells,{...base,regional:true});console.log(JSON.stringify({cells:d.cells.length,checks:d.checks,default:{retainedCattle:ref.retainedCattle,retainedBurden:ref.retainedBurden,cattleShare:ref.cattleShare,burdenShare:ref.burdenShare},unrestricted:{cattle:full.allCattle,burden:full.unrestricted},regionalDefault:{retainedCattle:regional.retainedCattle,retainedBurden:regional.retainedBurden},checksPassed:cases},null,2));
