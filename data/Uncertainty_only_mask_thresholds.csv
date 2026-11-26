@@ -1,0 +1,41 @@
+"Metric_id","Metric_label","Metric_column","Threshold_source","Anchor_region","Quantile","Threshold_value"
+"Probability_CrI_width","95% CrI width (probability scale)","Posterior_CrI_Width","Africa prediction-area distribution","Africa",0.5,0.112286013517932
+"Probability_CrI_width","95% CrI width (probability scale)","Posterior_CrI_Width","Africa prediction-area distribution","Africa",0.6,0.154166109703576
+"Probability_CrI_width","95% CrI width (probability scale)","Posterior_CrI_Width","Africa prediction-area distribution","Africa",0.7,0.169732095804395
+"Probability_CrI_width","95% CrI width (probability scale)","Posterior_CrI_Width","Africa prediction-area distribution","Africa",0.8,0.181937641720404
+"Probability_CrI_width","95% CrI width (probability scale)","Posterior_CrI_Width","Africa prediction-area distribution","Africa",0.9,0.208123167817833
+"Probability_CrI_width","95% CrI width (probability scale)","Posterior_CrI_Width","Africa prediction-area distribution","Africa",0.95,0.231868754844648
+"Probability_CrI_width","95% CrI width (probability scale)","Posterior_CrI_Width","Africa prediction-area distribution","Africa",0.975,0.243060926763714
+"Probability_CrI_width","95% CrI width (probability scale)","Posterior_CrI_Width","Africa prediction-area distribution","Africa",0.99,0.258477078557672
+"Probability_CrI_width","95% CrI width (probability scale)","Posterior_CrI_Width","Unique Atlas sampling locations","Africa",0.9,0.191101448030976
+"Probability_CrI_width","95% CrI width (probability scale)","Posterior_CrI_Width","Unique Atlas sampling locations","Africa",0.95,0.208390969905655
+"Probability_CrI_width","95% CrI width (probability scale)","Posterior_CrI_Width","Unique Atlas sampling locations","Africa",0.975,0.235505827679651
+"Probability_CrI_width","95% CrI width (probability scale)","Posterior_CrI_Width","Direct survey-footprint area","Africa",0.9,0.200966392897815
+"Probability_CrI_width","95% CrI width (probability scale)","Posterior_CrI_Width","Direct survey-footprint area","Africa",0.95,0.223746736476802
+"Probability_CrI_width","95% CrI width (probability scale)","Posterior_CrI_Width","Direct survey-footprint area","Africa",0.975,0.238552634873797
+"Probability_CrI_width","95% CrI width (probability scale)","Posterior_CrI_Width","Unique Atlas sampling locations","Ethiopia",0.9,0.196207842495004
+"Probability_CrI_width","95% CrI width (probability scale)","Posterior_CrI_Width","Unique Atlas sampling locations","Ethiopia",0.95,0.208217809675017
+"Probability_CrI_width","95% CrI width (probability scale)","Posterior_CrI_Width","Unique Atlas sampling locations","Ethiopia",0.975,0.228920867547257
+"Probability_CrI_width","95% CrI width (probability scale)","Posterior_CrI_Width","Direct survey-footprint area","Ethiopia",0.9,0.203433134866282
+"Probability_CrI_width","95% CrI width (probability scale)","Posterior_CrI_Width","Direct survey-footprint area","Ethiopia",0.95,0.21638267956671
+"Probability_CrI_width","95% CrI width (probability scale)","Posterior_CrI_Width","Direct survey-footprint area","Ethiopia",0.975,0.233120641776198
+"Logit_CrI_width","95% CrI width (logit scale)","Posterior_Logit_CrI_Width","Africa prediction-area distribution","Africa",0.5,1.20816977308507
+"Logit_CrI_width","95% CrI width (logit scale)","Posterior_Logit_CrI_Width","Africa prediction-area distribution","Africa",0.6,1.67785926151143
+"Logit_CrI_width","95% CrI width (logit scale)","Posterior_Logit_CrI_Width","Africa prediction-area distribution","Africa",0.7,3.41695204548489
+"Logit_CrI_width","95% CrI width (logit scale)","Posterior_Logit_CrI_Width","Africa prediction-area distribution","Africa",0.8,5.4956124956821
+"Logit_CrI_width","95% CrI width (logit scale)","Posterior_Logit_CrI_Width","Africa prediction-area distribution","Africa",0.9,6.97895661547336
+"Logit_CrI_width","95% CrI width (logit scale)","Posterior_Logit_CrI_Width","Africa prediction-area distribution","Africa",0.95,7.36986695204796
+"Logit_CrI_width","95% CrI width (logit scale)","Posterior_Logit_CrI_Width","Africa prediction-area distribution","Africa",0.975,7.5393864637369
+"Logit_CrI_width","95% CrI width (logit scale)","Posterior_Logit_CrI_Width","Africa prediction-area distribution","Africa",0.99,7.6763880228408
+"Logit_CrI_width","95% CrI width (logit scale)","Posterior_Logit_CrI_Width","Unique Atlas sampling locations","Africa",0.9,0.987452935372412
+"Logit_CrI_width","95% CrI width (logit scale)","Posterior_Logit_CrI_Width","Unique Atlas sampling locations","Africa",0.95,1.17729528586054
+"Logit_CrI_width","95% CrI width (logit scale)","Posterior_Logit_CrI_Width","Unique Atlas sampling locations","Africa",0.975,1.37945001377087
+"Logit_CrI_width","95% CrI width (logit scale)","Posterior_Logit_CrI_Width","Direct survey-footprint area","Africa",0.9,4.98413134395759
+"Logit_CrI_width","95% CrI width (logit scale)","Posterior_Logit_CrI_Width","Direct survey-footprint area","Africa",0.95,5.47162404971658
+"Logit_CrI_width","95% CrI width (logit scale)","Posterior_Logit_CrI_Width","Direct survey-footprint area","Africa",0.975,5.9924236607507
+"Logit_CrI_width","95% CrI width (logit scale)","Posterior_Logit_CrI_Width","Unique Atlas sampling locations","Ethiopia",0.9,0.936850631182777
+"Logit_CrI_width","95% CrI width (logit scale)","Posterior_Logit_CrI_Width","Unique Atlas sampling locations","Ethiopia",0.95,0.980871977358675
+"Logit_CrI_width","95% CrI width (logit scale)","Posterior_Logit_CrI_Width","Unique Atlas sampling locations","Ethiopia",0.975,1.09507975099615
+"Logit_CrI_width","95% CrI width (logit scale)","Posterior_Logit_CrI_Width","Direct survey-footprint area","Ethiopia",0.9,1.08369927999305
+"Logit_CrI_width","95% CrI width (logit scale)","Posterior_Logit_CrI_Width","Direct survey-footprint area","Ethiopia",0.95,1.19863423648989
+"Logit_CrI_width","95% CrI width (logit scale)","Posterior_Logit_CrI_Width","Direct survey-footprint area","Ethiopia",0.975,1.28209750984377

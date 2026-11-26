@@ -1,0 +1,10 @@
+name: aat-burden-explorer
+title: AAT Burden & Reporting Domain Explorer
+username: alexkaye
+account: alexkaye
+server: connect.posit.cloud
+hostUrl: https://api.connect.posit.cloud/v1
+appId: 01a1ea69-8076-bc6b-a495-19f580911478
+bundleId:
+url: https://connect.posit.cloud/alexkaye/content/01a1ea69-8076-bc6b-a495-19f580911478
+version: 1
